@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Arjun Parmeswar</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,23 +18,31 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <!--
   <link
   rel="stylesheet"
   href="https://unpkg.com/98.css"
   >
-  <link rel="stylesheet" href="https://jdan.github.io/98.css/docs.css">
+  <link rel="stylesheet" href="https://jdan.github.io/98.css/docs.css">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/> -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css"> -->
 
   <style>
-    p, li, a {
+    /* p, li, a {
       font-size: 13px;
-    }
-    img#me {
+    } */
+    /* img#me {
       display: inline;
       float: left;
-    }
+    } */
 
-    div#aboutMe {
-      padding-left: 130px;
+    /* div#aboutMe {
+      padding-left: 250px;
+    } */
+    aside#quickLinks > a {
+      display: inline;
+      margin-right: 10px;
     }
   </style>
 
@@ -42,49 +50,25 @@
 </head>
 
 <body>
-  <aside>
-    <ul class="tree-view">
-      <li>
-        <a href="#about">About</a>
-        <ul>
-          <li>
-          <a href="#interests">Interests</a>
-          </li>
-          <li>
-            <a href="#programming-languages">Programming Languages</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#links">Links</a>
-      </li>
-      <li>
-        <a href="#contact-and-resume">Contact & Resume</a>
-      </li>
-      <li>
-        <a href="#misc">Misc.</a>
-      </li>
-    </ul>
-  </aside>
-  <main>
-    <h1>Arjun P.</h1>
-    <hr>
-    <br>
-    
-    <div id="about">
-      <h2>About Me</h2>
-      <img id="me" src="img/arjun_pfp.PNG" width="100px">
-      <div id="aboutMe">
+  <section>
+    <header>
+      <h1>Arjun Parmeswar</h1>
+      <aside id="quickLinks">
+        <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a>
+      </aside>
+      <hr>
+    </header>
+    <article>
+    <section id="about">
+      <section id="aboutMe">
         <p>Hello!</p>
-        <p>I’m currently an undergrad student at Drexel University.</p>
+        <p>I’m currently an undergraduate student at Drexel University.</p>
         <ul>
           <li><b>Major</b>: Computer Science (B.S.)</li>
           <li><b>Minor</b>: Music Theory & Composition</li>
         </ul>
-        <div id="interests">
+        <section id="interests">
           <p><b>Interests</b>:</p>
           <ul>
             <li>Backend development</li>
@@ -92,21 +76,21 @@
             <li>DevOps, Distributed Systems & Cloud Computing</li>
             <li>Systems programming</li>
           </ul>
-        </div>
-        <div id="programming-languages">
+        </section>
+        <section id="programming-languages">
           <p><b>Programming Languages</b>:</p>
           <ul>
             <li><i>Proficient</i>: C, HTML/CSS/JS, Python, Bash</li>
             <li><i>Interested</i>: Golang</li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <div id="projects">
+        </section>
+      </section>
+    </section>
+    <section id="projects">
       <h2>Projects</h2>
       <p>If you want to see my projects, please see my <a href="https://www.github.com/arjpar">GitHub profile</a>.</p>
-    </div>
-    <div id="links">
+    </section>
+    <section id="links">
       <h2>Links</h2>
       <p>You can find me on these sites:</p>
       <ul>
@@ -114,13 +98,17 @@
         <li>GitHub: <a href="https://github.com/arjpar">@arjpar</a></li>
         <li>Sourcehut: <a href="https://sr.ht/~arjun">~arjun</a></li>
       </ul>
-    </div>
-    <div id="contact-and-resume">
-      <h2>Contact and Resume</h2>
-      <p>The best way to contact me is through email: [<a href="https://mailhide.io/e/DdykR9qA">email redacted</a>].</p>
-      <p>My resume is also available on request.</p>
-    </div>
-    <div id="misc">
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to contact me is through <a href="https://mailhide.io/e/DdykR9qA">email</a>.</p>
+      
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>My resume is available on request. Just shoot me an email.</p>
+    </section>
+    <section id="misc">
       <h2>Misc.</h2>
       <ul>
         <li>The content of this site is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</li>
@@ -128,8 +116,9 @@
         <li>Made with ❤️ by Arjun P.</li>
       </ul>
       <em>Last updated: 9/21/2021</em>
-    </div>
-  </main>
+    </section>
+  </article>
+  </section>
   <!-- <div class="window" style="margin: 32px; width: 250px">
     <div class="title-bar">
       <div class="title-bar-text">
