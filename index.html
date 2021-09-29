@@ -18,32 +18,40 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <!--
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/98.css"
-  >
-  <link rel="stylesheet" href="https://jdan.github.io/98.css/docs.css">-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/> -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css"> -->
 
   <style>
-    /* p, li, a {
-      font-size: 13px;
-    } */
-    /* img#me {
-      display: inline;
-      float: left;
-    } */
 
-    /* div#aboutMe {
-      padding-left: 250px;
-    } */
     aside#quickLinks > a {
       display: inline;
-      margin-right: 10px;
+      margin-right: 1rem;
     }
+
+    img#me, h1#name {
+      display: block;
+      text-align: center;
+    }
+
+    h1#name {
+      margin: 1rem auto;
+    }
+
+    img#me {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: 1rem auto;
+    }
+
+    section#meInfo {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    hr {
+      margin-top: 0.5rem;
+    }
+    
   </style>
 
   <meta name="theme-color" content="#fafafa">
@@ -53,12 +61,15 @@
   <!-- hello, universe! -->
   <section>
     <header>
-      <h1>Arjun P.</h1>
       <aside id="quickLinks">
-        <a href="#contact">Contact</a>
-        <a href="#resume">Resume</a>
+        <a href="#contact"><b>[Contact]</b></a>
+        <a href="#resume"><b>[Resume]</b></a>
       </aside>
       <hr>
+      <section id="meInfo">
+        <img id="me" src="img/arjun_pfp_cropped.PNG"/>
+        <h1 id="name">Arjun Parmeswar</h1>
+      </section>
     </header>
     <article>
     <section id="about">
@@ -69,21 +80,31 @@
           <li><b>Major</b>: Computer Science (B.S.)</li>
           <li><b>Minor</b>: Music Theory & Composition</li>
         </ul>
+
         <section id="computing-interests">
-          <p><b>Computing Interests</b>:</p>
-          <ul>
-            <li>Backend development</li>
-            <li>Computer security</li>
-            <li>DevOps, Distributed Systems & Cloud Computing</li>
-            <li>Systems programming</li>
-          </ul>
+          <details>
+            <summary>
+              <b>Computing Interests</b>
+            </summary>
+            <ul>
+              <li>Artificial Intelligence</li>
+              <li>Theory of Computation</li>
+              <li>Data Structures & Algorithms</li>
+              <li>Creative Coding</li>
+            </ul>
+          </details>
         </section>
+        
         <section id="programming-languages">
-          <p><b>Programming Languages</b>:</p>
-          <ul>
-            <li><i>Proficient</i>: C, HTML/CSS/JS, Python, Bash</li>
-            <li><i>Interested</i>: Golang</li>
-          </ul>
+          <details>
+            <summary>
+              <b>Programming Languages</b>
+            </summary>
+            <ul>
+              <li><i>Proficient</i>: C, HTML/CSS/JS, Python, Bash</li>
+              <li><i>Interested</i>: Golang, Julia</li>
+            </ul>
+          </details>
         </section>
       </section>
     </section>
@@ -115,7 +136,7 @@
         <li>The <a href="https://github.com/arjpar/website">code for this website</a> is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">AGPLv3</a>.</li>
         <li>Made with ❤️ by Arjun P.</li>
       </ul>
-      <em>Last updated: 9/24/2021</em>
+      <em>Last updated: 9/29/2021</em>
     </section>
   </article>
   </section>
