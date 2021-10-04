@@ -21,37 +21,31 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 
   <style>
-
-    aside#quickLinks > a {
-      display: inline;
-      margin-right: 1rem;
+    main#content {
+      text-align: center;
+      width: 100%;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5em;
     }
 
-    img#me, h1#name {
-      display: block;
+    header > h1#name {
+      font-size: 8em;
+    }
+    header > p {
+      letter-spacing: 0.5rem;
+      font-size: 1em;
+    }
+    nav#links > a {
+      text-decoration: underline;
+      margin: 0.5em;
+    }
+    footer {
       text-align: center;
     }
-
-    h1#name {
-      margin: 1rem auto;
-    }
-
-    img#me {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      margin: 1rem auto;
-    }
-
-    section#meInfo {
-      margin-top: 3rem;
-      margin-bottom: 1.5rem;
-    }
-
-    hr {
-      margin-top: 0.5rem;
-    }
-    
   </style>
 
   <meta name="theme-color" content="#fafafa">
@@ -59,86 +53,28 @@
 
 <body>
   <!-- hello, universe! -->
-  <section>
+  <main id="content">
     <header>
-      <aside id="quickLinks">
-        <a href="#contact"><b>[Contact]</b></a>
-        <a href="#resume"><b>[Resume]</b></a>
-      </aside>
-      <hr>
-      <section id="meInfo">
-        <img id="me" src="img/arjun_pfp_cropped.PNG"/>
-        <h1 id="name">Arjun Parmeswar</h1>
-      </section>
+      <h1 id="name">ΔP</h1>
+      <p>ARJUN PARMESWAR</p>
     </header>
-    <article>
-    <section id="about">
-      <section id="aboutMe">
-        <p>Hello!</p>
-        <p>I’m currently an undergraduate student at Drexel University.</p>
-        <ul>
-          <li><b>Major</b>: Computer Science (B.S.)</li>
-        </ul>
-
-        <section id="computing-interests">
-          <details>
-            <summary>
-              <b>Computing Interests</b>
-            </summary>
-            <ul>
-              <li>Artificial Intelligence</li>
-              <li>Theory of Computation</li>
-              <li>Data Structures & Algorithms</li>
-              <li>Creative Coding</li>
-            </ul>
-          </details>
-        </section>
-        
-        <section id="programming-languages">
-          <details>
-            <summary>
-              <b>Programming Languages</b>
-            </summary>
-            <ul>
-              <li><i>Proficient</i>: C, HTML/CSS/JS, Python, Bash</li>
-              <li><i>Interested</i>: Golang, Lua</li>
-            </ul>
-          </details>
-        </section>
-      </section>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>If you want to see my projects, please see my <a href="https://www.github.com/arjpar">GitHub</a>.</p>
-    </section>
-    <section id="links">
-      <h2>Links</h2>
-      <p>You can find me on these sites:</p>
-      <ul>
-        <li>LinkedIn: <a href="https://linkedin.com/in/aparme">@aparme</a></li>
-        <li>GitHub: <a href="https://github.com/arjpar">@arjpar</a></li>
-        <li>Sourcehut: <a href="https://sr.ht/~arjun">~arjun</a></li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>The best way to contact me is through <a href="https://mailhide.io/e/DdykR9qA">email</a>.</p>
-    </section>
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>My resume is available on request. Just shoot me an email.</p>
-    </section>
-    <section id="misc">
-      <h2>Misc.</h2>
-      <ul>
-        <li>The content of this site is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</li>
-        <li>The <a href="https://github.com/arjpar/website">code for this website</a> is licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">AGPLv3</a>.</li>
-        <li>Made with ❤️ by Arjun Parmeswar</li>
-      </ul>
-      <em>Last updated: 10/2/2021</em>
-    </section>
-  </article>
-  </section>
+    <nav id="links">
+      <a href="about.html"><b>[About]</b></a>
+      <span>≡</span>
+      <a href="https://mailhide.io/e/DdykR9qA"><b>[Contact]</b></a>
+      <span>≡</span>
+      <a href="resume.pdf"><b>[Resume]</b></a>
+      <span>∥</span>
+      <a href="https://linkedin.com/in/aparme"><b>[LinkedIn]</b></a>
+      <span>≡</span>
+      <a href="https://www.github.com/arjpar"><b>[GitHub]</b></a>
+      <span>≡</span>
+      <a href="https://sr.ht/~arjun"><b>[Sourcehut]</b></a>
+    </nav>
+  </main>
+  <footer>
+    <em>Last updated: 10/3/2021</em>
+  </footer>
   <!-- <div class="window" style="margin: 32px; width: 250px">
     <div class="title-bar">
       <div class="title-bar-text">
