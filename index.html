@@ -26,6 +26,7 @@
   <meta name="theme-color" content="#fafafa">
 
   <style>
+    /* Center everything */
     main#content {
       text-align: center;
       width: 100%;
@@ -36,17 +37,26 @@
       justify-content: center;
     }
 
-    header > h1#name {
+    /* Korean name font size */
+    header > h1#koreanName {
       font-size: 8rem;
+      margin-bottom: 0px;
     }
 
-    header > p {
+    /* Fullname */
+    header > p#fullName {
+      margin-top: 0.125em;
+      margin-bottom: 1.25em;
+
       letter-spacing: 0.5rem;
       font-size: 1rem;
     }
+
+    /* Links */
     nav#links > a {
-      text-decoration: underline;
       margin: 0.5rem;
+
+      text-decoration: underline;
       color: inherit;
       font-size: 1rem;
     }
@@ -61,9 +71,8 @@
   <!-- hello, universe! -->
   <main id="content">
     <header>
-      <!-- <h1 id="name">არჯუნ</h1> -->
-      <h1 id="name">아르준</h1>
-      <p>ARJUN PARMESWAR</p>
+      <h1 id="koreanName">아르준</h1>
+      <p id="fullName">ARJUN PARMESWAR</p>
     </header>
     <nav id="links">
       <a href="about.html"><b>About</b></a>
