@@ -24,35 +24,13 @@
   <meta name="theme-color" content="#fafafa">
 
   <style>
-    aside#quickLinks>a {
-      display: inline;
-      margin-right: 1rem;
-    }
-
-    img#me,
-    h1#name {
-      display: block;
-      text-align: center;
-    }
-
-    h1#name {
-      margin: 1rem auto;
-    }
-
-    img#me {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      margin: 1rem auto;
-    }
-
-    section#meInfo {
-      margin-top: 3rem;
-      margin-bottom: 1.5rem;
-    }
-
-    header > hr {
+    header>hr {
       margin-top: 0.5rem;
+    }
+
+    p#tagline {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
@@ -60,87 +38,108 @@
 <body>
   <!-- hello, universe! -->
   <section>
-    <header>
-      <aside id="quickLinks">
-        <a href="index.html"><b>Home</b></a>
-        <a href="https://mailhide.io/e/DdykR9qA"><b>Contact</b></a>
-        <a href="resume.pdf"><b>Resume</b></a>
-      </aside>
+    <nav id="links">
+      <h3 id="fullName"><a href="https://nujra.space">Arjun Parmeswar</a></h3>
+      <a id="about" href="https://nujra.space/about.html">About</a>
+      <a id="contact" href="mailto:parmeswar.arjun@protonmail.com">Contact</a>
+      <a id="resume" href="https://nujra.space/resume.pdf">Resume</a>
+      <a id="linkedin" href="https://linkedin.com/in/arjpar">LinkedIn</a>
+      <a id="github" href="https://github.com/arjpar">GitHub</a>
       <hr>
-      <section id="meInfo">
-        <img id="me" src="img/arjun_pfp_cropped.PNG" />
-        <h1 id="name">Arjun Parmeswar</h1>
-      </section>
+    </nav>
+    <header>
+      <h1>About</h1>
     </header>
     <article>
       <section id="about">
-        <section id="aboutMe">
-          <p>Hello!</p>
-          <p>I’m currently an undergraduate student at Drexel University.</p>
-          <ul>
-            <li><b>Major</b>: Computer Science (B.S.)</li>
-          </ul>
-
-          <section id="computing-interests">
-            <details>
-              <summary>
-                <b>Computing Interests</b>
-              </summary>
-              <ul>
-                <li>Backend Development</li>
-                <li>Artificial Intelligence</li>
-                <li>Application Development</li>
-                <li>Systems Programming</li>
-              </ul>
-            </details>
-          </section>
-
-          <section id="programming-languages">
-            <details>
-              <summary>
-                <b>Programming Languages</b>
-              </summary>
-              <ul>
-                <li><i>Proficient</i>: HTML/CSS/JS, Python, Bash</li>
-                <li><i>Familiar</i>: C</li>
-                <li><i>Learning</i>: Golang </li>
-                <li><i>Want to Learn</i>: Zig, Rust, D</li>
-              </ul>
-            </details>
-          </section>
+        <section id="bio">
+          <p id="tagline">Undergrad B.S. Computer Science Student at Drexel University CCI</p>
+          <p>Hello! You've made it to my corner of the internet. Welcome.</p>
+          <p>
+            As stated above, I'm currently an undergrad B.S. CompSci student at
+            <a href="https://drexel.edu/cci/academics/computer-science-department/">
+              Drexel University CCI</a>.
+            I enjoy learning about the different domains of software engineering,
+            taking the new intelligence I've learned and applying it to solve
+            complex problems.
+            My interests in technology vary and will continue to grow as my
+            knowledge grows.
+            I consider myself a software minimalist and a
+            <abbr title="Free, Libre, Open Source Software">FLOSS</abbr>
+            enthusiast.
+            I also naturally love the
+            <a href="https://golang.org">Go programming language</a> and
+            <a href="https://en.wikipedia.org/wiki/Linux">Linux</a>.
+            Although I don't love Linux as much
+            as my admiration for <a href="https://p9f.org/about.html">Plan 9</a>.
+          </p>
+          <p>
+            I'm obsessed with the tools I use, and I constantly try to improve my setup.
+            I've been programming ever since I was ~11-14 years
+            old, and have been using computers for almost my entire life.
+            In my free time, I like to take
+            a stab at online competitive programming problems on sites like
+            <a href="https://codewars.com/">Codewars</a>.
+          </p>
+          <p>
+            Outside of tech, I enjoy music, anime, philosophy, history, movies and video games.
+          </p>
         </section>
+        <section id="swe-interests">
+          <details>
+            <summary>
+              <b>SWE Interests</b>
+            </summary>
+            <ul>
+              <li>Backend Development</li>
+              <li>Artificial Intelligence</li>
+              <li>Distributed Systems/Cloud Computing</li>
+              <li>Systems Programming</li>
+            </ul>
+          </details>
+        </section>
+
+        <section id="programming-languages">
+          <details>
+            <summary>
+              <b>Programming Languages</b>
+            </summary>
+            <ul>
+              <li><i>Proficient</i>: HTML/CSS/JS, Python, Bash</li>
+              <li><i>Familiar</i>: Golang, C, Racket</li>
+              <li><i>Want to Learn</i>: Rust, <span class="redacted">
+                  <a href="https://drewdevault.com/2021/03/19/A-new-systems-language.html">***</a>
+                </span></li>
+            </ul>
+          </details>
+        </section>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>The best way to contact me is through email: <a
+            href="mailto:parmeswar.arjun@protonmail.com">parmeswar.arjun@protonmail.com</a>.</p>
+      </section>
+      <section id="resume">
+        <h2>Resume</h2>
+        <p>My resume is available here: <a href="https://nujra.space/resume.pdf">resume.pdf</a>.</p>
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <!-- <p class="info">
-        <b>Notice:</b> In the <i>near future</i> I plan to move all my projects
-        from <a href="https://www.github.com">GitHub</a> to <a href="https://sr.ht">Sourcehut</a>.
-      </p> -->
-        <p>If you want to see my projects, please see my <a href="https://www.github.com/arjpar">GitHub</a>.</p>
+        <p>If you want to see my projects, please see my <a href="https://github.com/arjpar">GitHub</a>.</p>
       </section>
       <section id="links">
         <h2>Links</h2>
         <p>You can find me on these sites:</p>
         <ul>
-          <li>LinkedIn: <a href="https://linkedin.com/in/aparme">@aparme</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/arjpar">@arjpar</a></li>
           <li>GitHub: <a href="https://github.com/arjpar">@arjpar</a></li>
-          <li>Sourcehut: <a href="https://sr.ht/~arjun">~arjun</a></li>
         </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>The best way to contact me is through <a href="https://mailhide.io/e/DdykR9qA">email</a>.</p>
-      </section>
-      <section id="resume">
-        <h2>Resume</h2>
-        <p>My resume is available <a href="resume.pdf">here</a>.</p>
       </section>
       <footer>
         <p>The content of this site is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC
-              BY-SA 2.0</a>. The <a href="https://github.com/arjpar/arjpar.github.io">code for this website</a> is licensed under <a
-              href="https://choosealicense.com/licenses/agpl-3.0/">AGPLv3</a>.</p>
-          <!-- <li>Made with ❤️ by Arjun Parmeswar</li> -->
-        <em>Last updated: 10/9/2021</em>
+            BY-SA 2.0</a>. The <a href="https://github.com/arjpar/arjpar.github.io">code for this website</a> is
+          licensed under <a href="https://choosealicense.com/licenses/agpl-3.0/">AGPLv3</a>.</p>
+        <em>Last updated: 10/17/2021</em>
       </footer>
     </article>
   </section>
@@ -148,13 +147,6 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
