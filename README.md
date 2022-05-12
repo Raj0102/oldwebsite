@@ -1,4 +1,4 @@
-# Arjun's Personal Website
+# Raj's Personal Website
 
 Built using HTML5 Boilerplate + Water.css. Inspiration goes to a few people:
 - [emersion](https://emersion.fr) (@emersion)
